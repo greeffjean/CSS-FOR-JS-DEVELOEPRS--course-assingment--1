@@ -1,0 +1,76 @@
+/* Global Scope */
+
+:root {
+  --green: rgb(41, 162, 113);
+  --greyDark: rgb(43, 43, 43);
+  --greyBackground: rgb(133, 131, 131);
+  --mustard: rgb(240, 210, 101);
+  --darkMustard: rgb(179, 156, 75);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+header > div,
+article {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+/* Header */
+
+header {
+  border-bottom: 10px solid var(--greyDark);
+  padding: 5vh 0;
+}
+
+header > div * {
+  width: 50%;
+  min-width: 400px;
+}
+
+header > div *:not(span) {
+  padding: 0 6vw;
+}
+
+header h1 {
+  margin: 5vh 0;
+}
+
+header span {
+  color: var(--green);
+}
+
+/* Article */
+
+section {
+  background-color: var(--greyBackground);
+  padding: 8vh 0;
+}
+
+article {
+  background-color: white;
+  padding: 1vh 2vw 3vh 0;
+  border-bottom: 10px solid var(--greyDark);
+}
+
+article *:not(span) {
+  padding: 0 6vw;
+}
+
+article h2 {
+  padding: 20px 10px 20px 10px;
+  width: max-content !important;
+  margin: 0 0 2vh -1%;
+  display: inline-block;
+  background-color: var(--mustard);
+  border-bottom: 5px solid var(--darkMustard);
+}
